@@ -5,8 +5,12 @@ using UnityEngine;
 /// </summary>
 public class Clock : MonoBehaviour
 {
-    private void Update()
-    {
+    //initialise clock hands in inspector
+    [SerializeField] Transform hoursPivot, minutesPivot, secondsPivot;
 
+    //execute code when component awakens
+    private void Awake()
+    {
+        
     }
 }
