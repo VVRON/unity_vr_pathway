@@ -11,6 +11,7 @@ public class Clock : MonoBehaviour
     //execute code when component awakens
     private void Awake()
     {
-        
+        //get local rotation as a quaternion euler
+        hoursPivot.localRotation = Quaternion.Euler(0f, 0f, -30f);
     }
 }
